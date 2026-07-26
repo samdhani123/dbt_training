@@ -5,8 +5,8 @@ sources:
    - name: ANALYTICS
      database: DBT_SOURCE
      schema: D_SOURCE
-   tables:
-     - name: EMP
+     tables:
+       - name: EMP
 
 
 models:
