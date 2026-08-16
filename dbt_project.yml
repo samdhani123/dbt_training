@@ -1,12 +1,9 @@
-# Name your project
 name: 'dbt_training'
 version: '1.0.0'
 config-version: 2
 
-# Profile used by dbt
 profile: 'default'
 
-# Project paths
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
@@ -20,25 +17,14 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
-
-# Model configurations
 models:
   dbt_training:
-
-    # All models under models/example/
     example:
       +materialized: table
 
-    # All models under models/staging/
     staging:
       +materialized: table
 
-    # All models under models/marts/
-    marts:
-      +materialized: table
-
-
-# Seed configurations
 seeds:
   dbt_training:
     +schema: reference
