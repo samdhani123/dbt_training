@@ -1,0 +1,10 @@
+version: 2
+ 
+models:
+  - name: orders
+    columns:
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('customers')
+              field: customer_id

@@ -1,0 +1,7 @@
+seeds:
+  - name: emp_csv
+    config:
+      column_types:
+        id: varchar(50)
+
+    
