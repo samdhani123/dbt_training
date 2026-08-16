@@ -33,9 +33,6 @@ models:
     staging:
       +materialized: table
 
-    # All models under models/marts/
-    marts:
-      +materialized: table
 
 
 # Seed configurations
